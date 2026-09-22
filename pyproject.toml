@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "szobo-draxen"
+version = "1.6.0"
+description = "Kaynak izlenebilir, düşük yoğunluklu OSINT ve ilişki analizi"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+draxen = "draxen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["draxen*"]
